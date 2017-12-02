@@ -1,0 +1,19 @@
+﻿  DISTJOIN.cpp
+c:\users\carlo\source\repos\distjoin\distjoin\algoritmo.h(103): warning C4018: '<': no coinciden signed/unsigned
+c:\users\carlo\source\repos\distjoin\distjoin\algoritmo.h(113): warning C4018: '<': no coinciden signed/unsigned
+c:\users\carlo\source\repos\distjoin\distjoin\nodo.h(42): warning C4018: '<': no coinciden signed/unsigned
+c:\users\carlo\source\repos\distjoin\distjoin\metodos.h(38): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+c:\users\carlo\source\repos\distjoin\distjoin\metodos.h(54): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+c:\users\carlo\source\repos\distjoin\distjoin\metodos.h(70): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+c:\users\carlo\source\repos\distjoin\distjoin\distjoin.cpp(29): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+c:\users\carlo\source\repos\distjoin\distjoin\distjoin.cpp(43): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\carlo\source\repos\distjoin\distjoin\distjoin.cpp(44): warning C4018: '<': no coinciden signed/unsigned
+c:\users\carlo\source\repos\distjoin\distjoin\distjoin.cpp(49): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
+c:\users\carlo\source\repos\distjoin\distjoin\distjoin.cpp(52): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+c:\users\carlo\source\repos\distjoin\distjoin\distjoin.cpp(54): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+c:\users\carlo\source\repos\distjoin\distjoin\distjoin.cpp(59): warning C4018: '<': no coinciden signed/unsigned
+c:\users\carlo\source\repos\distjoin\distjoin\distjoin.cpp(65): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+c:\users\carlo\source\repos\distjoin\distjoin\distjoin.cpp(110): warning C4018: '<': no coinciden signed/unsigned
+c:\users\carlo\source\repos\distjoin\distjoin\distjoin.cpp(111): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+c:\users\carlo\source\repos\distjoin\distjoin\distjoin.cpp(135): warning C4018: '<': no coinciden signed/unsigned
+  DISTJOIN.vcxproj -> C:\Users\carlo\source\repos\DISTJOIN\Debug\DISTJOIN.exe
