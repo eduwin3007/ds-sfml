@@ -20,20 +20,24 @@ public:
 	float y = 0;
 	string num = "";
 	sf::Font fuente;
+	sf::Color color;
 	vector <Nodo*> hijos;
 
 
 public:
 	Nodo() {}
-	Nodo(int size, float x, float y, string num, sf::Font fuente) {
+	Nodo(int size, float x, float y, string num, sf::Font fuente,sf::Color color) {
 		this->alto = size;
 		this->ancho = size;
 		this->x = x;
 		this->y = y;
 		this->num = num;
 		this->fuente = fuente;
+		this->color = color;
 	}
 	void paint(sf::RenderWindow* window);
+	void paintColor(sf::RenderWindow* window, sf::Color color);
+
 };
 void Nodo::paint(sf::RenderWindow* window) {
 	sf::Text numCirculo;
@@ -50,7 +54,7 @@ void Nodo::paint(sf::RenderWindow* window) {
 	}
 
 	sf::CircleShape shape(25);
-	shape.setFillColor(sf::Color::White);
+	shape.setFillColor(this->color);
 	shape.setPosition(this->x, this->y);
 	window->draw(shape);
 	// Damos un valor a la cadena
@@ -68,7 +72,6 @@ void Nodo::paint(sf::RenderWindow* window) {
 	//MANDAS A LA VENTANA EL NUMERO
 	window->draw(numCirculo);
 }
-
 struct Move {
 	float x = 0;
 	float y = 0;

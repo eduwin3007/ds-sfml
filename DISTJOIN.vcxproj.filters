@@ -21,13 +21,13 @@
     <ClInclude Include="targetver.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="Algoritmo.h">
-      <Filter>Archivos de origen</Filter>
-    </ClInclude>
     <ClInclude Include="Nodo.h">
       <Filter>Archivos de origen</Filter>
     </ClInclude>
-    <ClInclude Include="metodos.h">
+    <ClInclude Include="Algoritmo.h">
+      <Filter>Archivos de origen</Filter>
+    </ClInclude>
+    <ClInclude Include="Textos.h">
       <Filter>Archivos de origen</Filter>
     </ClInclude>
   </ItemGroup>

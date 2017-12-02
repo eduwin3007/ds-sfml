@@ -9,15 +9,17 @@
 using namespace std;
 class UFDS {
 public:
-	vector<int> p, rank, setSizes, maxSizes, pinmediato;
+
+	vector<int> nNodo, p, rank, setSizes, maxSizes, pinmediato;
 	int numSets;
 public:
 	//Constructor
 	UFDS() {
+		int nNodo = { 0 };
 		int p = { 0 };
 		int rank = { 0 };
 		int setSizes = { 0 };
-		int maxSizes = { 0 };
+		int maxSizes = { 0 };		
 		int pinmediato = { 0 };
 		numSets = 0;
 	}
@@ -37,6 +39,7 @@ public:
 };
 
 void UFDS::makeSet(int N) {
+	nNodo.assign(N, 0);
 	numSets = N;
 	rank.assign(N, 0);
 	p.assign(N, 0);
@@ -44,6 +47,7 @@ void UFDS::makeSet(int N) {
 	for (int i = 0; i < N; i++) {
 		p[i] = i;
 		pinmediato[i] = i;
+		nNodo[i] = i;
 	}
 	setSizes.assign(N, 1);
 }
@@ -87,9 +91,9 @@ void UFDS::unionSet(int i, int j) {
 }
 
 void UFDS::unionSimple(int i, int j) {
-	int xRoot = findSetPinmediato(i);    //Obtengo la raiz de la componente del vértice X
-	int yRoot = findSetPinmediato(j);    //Obtengo la raiz de la componente del vértice Y
-	pinmediato[xRoot] = yRoot;   //Mezclo ambos arboles o conjuntos, actualizando su padre de alguno de ellos como la raiz de otro
+	int xRoot = findSetPinmediato(i);    
+	int yRoot = findSetPinmediato(j);    
+	pinmediato[xRoot] = yRoot;
 }
 
 int UFDS::setSize(int i) {
