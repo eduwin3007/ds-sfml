@@ -36,8 +36,6 @@ public:
 		this->color = color;
 	}
 	void paint(sf::RenderWindow* window);
-	void paintColor(sf::RenderWindow* window, sf::Color color);
-
 };
 void Nodo::paint(sf::RenderWindow* window) {
 	sf::Text numCirculo;
@@ -133,7 +131,7 @@ void mover(queue<Move*> * movimientos) {
 				movimientos->front()->start();
 			}
 			movimiento->move();
-			if (!movimiento->isMoving) { // si dejo de moverse, chau
+			if (!movimiento->isMoving) { 
 				delete movimiento;
 				movimientos->pop();
 			}
